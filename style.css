@@ -1,8 +1,7 @@
-
 @font-face {
     font-family: 'montserratregular';
-    src: url('../fonts/montserrat-webfont.woff2') format('woff2'),
-         url('../fonts/montserrat-webfont.woff') format('woff');
+    src: url('./fonts/montserrat-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -10,8 +9,8 @@
 
 @font-face {
     font-family: 'montserratbold';
-    src: url('../fonts/montserrat_bold-webfont.woff2') format('woff2'),
-         url('../fonts/montserrat_bold-webfont.woff') format('woff');
+    src: url('./fonts/montserrat_bold-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat_bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
@@ -19,9 +18,99 @@
 
 @font-face {
     font-family: 'montserratmedium';
-    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
-         url('../fonts/montserrat-medium-webfont.woff') format('woff');
+    src: url('./fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-medium-webfont.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+
+}
+
+.container {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.article {
+  width: 1440px;
+  height: 900px;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(to right, #000000 32%, #FFFFFF 30%);
+  /*z-index: 1;*/
+  margin: 0 0 0 0;
+}
+
+.article__header {
+  height: 92px;
+  width: 1440px;
+  left: 0px;
+  top: 0px;
+  /*z-index: 2;*/
+}
+
+.article-header__title {
+  color: black;
+  left: 52px;
+  top: 36px;
+  font-family: 'montserratmedium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+/*  z-index: 2;*/
+
+}
+
+.language {
+  width: 31px;
+  height: 25px;
+  left: 388px;
+  top: 42px;
+  font-family: 'montserratmedium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  color: #FFFFFF;
+  background: none;
+
+}
+
+.language::before {
+content: '';
+width: 11px;
+height: 5.5px;
+left: 426px;
+top: 54px;
+
+}
+
+.article-header__burger {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  left: 1348px;
+  top: 0px;
+  background: #000000;
+  opacity: 0.05;
+
+}
+
+.article-header__burger-span {
+  position: absolute;
+  width: 34.7px;
+  height: 3.48px;
+  left: 1376.25px;
+  top: 39.54px;
+  background-color: #000000;
+
+}
+
+.article-header__burger-span::after {
+
 
 }
