@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('./fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url('./fonts/montserrat_bold-webfont.woff2') format('woff2'),
+       url('./fonts/montserrat_bold-webfont.woff') format('woff');
+ font-weight: 700;
+ font-style: normal;
+
+}
+
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('./fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+body {
+
+  margin-left: 0px;
+  margin-top: 0px;
+  padding: 0;
+
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding:0 0 0 0;
+  margin: 0 auto;
+
+}
+
+.article {
+   position: relative;
+   height: 900px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-bottom: 0;
+}
+
+.article::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 31%;
+  height: 900px;
+  background-color: black;
+}
+
+.article__header {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0;
+  width: 100%;
+  height: 92px;
+
+}
+
+.article-header__title {
+  color: white;
+  padding-left: 52px;
+  top: 36px;
+  font-family: 'montserratmedium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+
+}
+
+.language {
+  -webkit-appearance: none;
+  border-style: none;
+  width: 31px;
+  height: 25px;
+  margin-top: 42px;
+  margin-left: 238px;
+  font-family: 'montserratmedium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  color: #FFFFFF;
+  background: none;
+
+}
+
+.article-header__arrow {
+  position: absolute;
+  width: 11px;
+  height: 5.5px;
+  left: 426px;
+  transform: translateX(-100%);
+  top: 54px;
+
+}
+
+.article-header__burger {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 92px;
+  height: 92px;
+  margin-left: auto;
+  padding-left: 0;
+
+}
+
+.article__main-picture {
+  position: absolute;
+  display: flex;
+  width: 549px;
+  height: 562px;
+  left: 186px;
+  top: 169px;
+
+}
+
+.article__content {
+  width: 50%;
+  height: 562px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+
+}
+
+.article__title {
+  position: absolute;
+  width: 475px;
+  height: 164px;
+  left: 789px;
+  top: 263px;
+  font-family: 'montserratbold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 82px;
+  color: black;
+  margin-top: 0;
+
+}
+
+  .article__text {
+    position: absolute;
+    width: 467px;
+    height: 127px;
+    left: 789px;
+    top: 453px;
+    font-family: 'montserratregular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    margin-top: 0;
+
+  }
+
+  .article__anchor-list{
+   position: absolute;
+   width: 520px;
+   height: 44px;
+   left: 789px;
+   top: 616px;
+   margin: 0;
+   padding: 0;
+   display: flex;
+
+  }
+
+.article__anchor-link {
+  list-style: none;
+  height:0;
+  font-family: 'montserratmedium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 0px;
+  border: 1.5px solid #000000;
+  box-sizing: border-box;
+  padding: 21px 40px;
+  margin-right: 50px;
+
+}
+
+.article__anchor-item {
+  height: 0px;
+  font-family: 'montserratmedium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 0px;
+  border: 0;
+  padding: 21px 0px 21px 0px;
+  margin-left: 0;
+  margin-right: 19px;
+
+}
+
+ .article-anchor__arrow {
+   border: 0;
+   list-style: none;
+   margin-left: 0;
+   margin-top: 11px;
+   width: 43px;
+   height: 0px;
+
+}
+
+.article__footer {
+  height: 85px;
+}
+
+
+.article-footer__btn {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 52px;
+  height: 85px;
+  width: 707px;
+
+}
+
+.article-footer__btn-list {
+  display: flex;
+  width: 160px;
+  height: 48px;
+  justify-content: space-around;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 41px;
+
+}
+
+.btn-list__instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  margin-right: 12px
+
+}
+
+.btn-list__vk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  margin-right: 12px
+
+}
+
+.btn-list__facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+
+}
+
+.scrollup-btn {
+  display: flex;
+  width: 27px;
+  height: 46px;
+  margin-bottom: 39px;
+
+}
+
+@media (max-width: 440px) {
+    .article__title {
+    font-size: 50px;
+    line-height: 42px;
+
+    }
+}
+
+@media (max-width: 375px) {
+    .article-header__burger {
+        width: 70px;
+        height: 69px;
+    }
+
+    .language {
+        display: none;
+    }
+
+    .article-header__title {
+        padding-left: 25px;
+        margin-bottom: 0;
+    }
+
+
+    .article__content {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        min-height: 530px;
+        position: relative;
+        align-self: auto;
+    }
+
+    .article__text, .article__anchor-list, .article__footer {
+        display: none;
+    }
+
+
+
+    .article__title {
+        position: absolute;
+        left: 25px;
+        bottom: 65px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .article__main-picture img {
+        display: none;
+    }
+
+    .article__main-picture {
+        min-height: 530px;
+        background-image: url('img/pete-bellis-432867-unsplash%20(2).png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 0;
+        display: none;
+    }
+}
