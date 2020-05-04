@@ -1,25 +1,7 @@
 @font-face {
-    font-family: 'montserratregular';
-    src: url('./fonts/montserrat-regular-webfont.woff2') format('woff2'),
-         url('./fonts/montserrat-regular-webfont.woff') format('woff');
-    src: url('./fonts/montserrat-webfont.woff2') format('woff2'),
-         url('./fonts/montserrat-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-  font-family: 'montserratbold';
-  src: url('./fonts/montserrat_bold-webfont.woff2') format('woff2'),
-       url('./fonts/montserrat_bold-webfont.woff') format('woff');
- font-weight: 700;
- font-style: normal;
-
-}
     font-family: 'montserratbold';
-    src: url('./fonts/montserrat_bold-webfont.woff2') format('woff2'),
-         url('./fonts/montserrat_bold-webfont.woff') format('woff');
+    src: url('./fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
@@ -34,7 +16,17 @@
 
 }
 
+@font-face {
+    font-family: 'montserratregular';
+    src: url('./fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('./fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
+  position: relative;
   margin-left: 0px;
   margin-top: 0px;
   padding: 0;
@@ -43,16 +35,14 @@ body {
 
 .wrapper {
   min-height: 100%;
+
 }
+
 .container {
   min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
-}
-
-.container {
   width: 100%;
   max-width: 1440px;
   padding:0 0 0 0;
@@ -67,6 +57,12 @@ body {
    flex-direction: column;
    justify-content: space-between;
    padding-bottom: 0;
+   width: 1440px;
+   height: 900px;
+   top: 0px;
+   left: 0px;
+   margin: 0 0 0 0;
+
 }
 
 .article::before {
@@ -93,17 +89,10 @@ body {
 .article-header__title {
   color: white;
   padding-left: 52px;
-  
+
 }
 
-.article {
-  width: 1440px;
-  height: 900px;
-  top: 0px;
-  left: 0px;
-  background: linear-gradient(to right, #000000 32%, #FFFFFF 30%);
-  margin: 0 0 0 0;
-}
+
 
 .article__header {
   height: 92px;
@@ -114,7 +103,7 @@ body {
 }
 
 .article-header__title {
-  color: black;
+  color: white;
   left: 52px;
   top: 36px;
   font-family: 'montserratmedium';
@@ -154,14 +143,6 @@ body {
   left: 426px;
   transform: translateX(-100%);
   top: 54px;
-}
-.language::before {
- content: '';
- width: 11px;
- height: 5.5px;
- left: 426px;
- top: 54px;
-
 
 }
 
@@ -198,7 +179,7 @@ body {
 
 .article__title {
   position: absolute;
-  width: 475px;
+  
   height: 164px;
   left: 789px;
   top: 263px;
@@ -214,7 +195,7 @@ body {
 
   .article__text {
     position: absolute;
-    width: 467px;
+
     height: 127px;
     left: 789px;
     top: 453px;
@@ -337,90 +318,5 @@ body {
   width: 27px;
   height: 46px;
   margin-bottom: 39px;
-
-}
-
-@media (max-width: 440px) {
-    .article__title {
-    font-size: 50px;
-    line-height: 42px;
-
-    }
-}
-
-@media (max-width: 375px) {
-    .article-header__burger {
-        width: 70px;
-        height: 69px;
-    }
-
-    .language {
-        display: none;
-    }
-
-    .article-header__title {
-        padding-left: 25px;
-        margin-bottom: 0;
-    }
-
-
-    .article__content {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-        min-height: 530px;
-        position: relative;
-        align-self: auto;
-    }
-
-    .article__text, .article__anchor-list, .article__footer {
-        display: none;
-    }
-
-
-
-    .article__title {
-        position: absolute;
-        left: 25px;
-        bottom: 65px;
-        margin-bottom: 0;
-        text-align: left;
-    }
-
-    .article__main-picture img {
-        display: none;
-    }
-
-    .article__main-picture {
-        min-height: 530px;
-        background-image: url('img/pete-bellis-432867-unsplash%20(2).png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 0;
-        display: none;
-    }
-
-  position: relative;
-  width: 92px;
-  height: 92px;
-  left: 1348px;
-  top: 0px;
-  background: #000000;
-  opacity: 0.05;
-
-}
-
-.article-header__burger-span {
-  position: absolute;
-  width: 34.7px;
-  height: 3.48px;
-  left: 1376.25px;
-  top: 39.54px;
-  background-color: #000000;
-
-}
-
-.article-header__burger-span::after {
 
 }
