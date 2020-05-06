@@ -46,7 +46,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 1440px;
   padding:0 0 0 0;
   margin: 0 auto;
 
@@ -124,6 +124,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
   width: 92px;
   height: 92px;
   margin-left: auto;
@@ -201,7 +202,7 @@ body {
    margin-top: 0;
    width: 43px;
    height: 0px;
-   
+
 
 }
 
@@ -251,9 +252,12 @@ body {
 .article-inner__anchor-arrow {
   display: none;
     }
+    .article-header__title {
+        margin-right: 170px;
+    }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1140px) {
     .article-inner__title {
         font-size: 70px;
         line-height: 60px;
