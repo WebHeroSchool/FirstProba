@@ -369,7 +369,7 @@ body {
   }
 
   .main-picture__img {
-    max-width: 100%
+    max-width: 100%;
   }
 
   .article__inner {
@@ -583,8 +583,8 @@ body {
   border-radius: 50%;
   border: none;
   margin-right: 11.82px;
-  transition: width .1s linear;
-  transition: height .1s linear;
+  transition: width 0.1s linear;
+  transition: height 0.1s linear;
 }
 
 .content-description__btn_grey {
