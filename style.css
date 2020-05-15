@@ -391,6 +391,10 @@ body {
     font-size: 12px;
   }
 
+  .article-inner__anchor-link{
+    margin-right: 0;
+  }
+
   .anchor-link--border {
     margin-bottom: 30px;
     margin-right: 0;
@@ -524,7 +528,7 @@ body {
 .content-description__block {
   background: #fff;
   height: auto;
-  padding: 40px, 65px, 44px, 55px;
+  padding: 40px 55px 44px 55px;
   margin-bottom: 39px;
 }
 
